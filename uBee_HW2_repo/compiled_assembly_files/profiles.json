@@ -1,0 +1,54 @@
+{
+  "keys": [
+    "BP_ENABLE",
+    "BP_ENTRIES",
+    "BP_GSHARE",
+    "GHR_WIDTH",
+    "DMEM_WORDS"
+  ],
+  "profiles": {
+    "P1": [
+      1,
+      128,
+      0,
+      5,
+      16384
+    ],
+    "P2": [
+      1,
+      32,
+      0,
+      5,
+      16384
+    ],
+    "P3": [
+      1,
+      256,
+      0,
+      5,
+      16384
+    ],
+    "P4": [
+      1,
+      128,
+      1,
+      5,
+      16384
+    ],
+    "P5": [
+      0,
+      128,
+      0,
+      5,
+      16384
+    ],
+    "P6": [
+      1,
+      128,
+      0,
+      5,
+      8192
+    ]
+  },
+  "P4": "Excluded: original RTL is unsupported by XSim2025.2; no core patch included."
+}

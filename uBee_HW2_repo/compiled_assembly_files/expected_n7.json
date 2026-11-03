@@ -1,0 +1,179 @@
+{
+  "graph": {
+    "name": "P1_n7_disconnected",
+    "n": 7,
+    "source": 0,
+    "directed": false,
+    "edges": [
+      [
+        0,
+        1,
+        7
+      ],
+      [
+        0,
+        2,
+        9
+      ],
+      [
+        0,
+        5,
+        14
+      ],
+      [
+        1,
+        2,
+        10
+      ],
+      [
+        1,
+        3,
+        15
+      ],
+      [
+        2,
+        3,
+        11
+      ],
+      [
+        2,
+        5,
+        2
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        4,
+        5,
+        9
+      ]
+    ]
+  },
+  "dist": [
+    0,
+    7,
+    9,
+    20,
+    20,
+    11,
+    2147483647
+  ],
+  "unreachable_parent": 4294967295,
+  "done": 1146048069,
+  "executed_id": 1145653809,
+  "layout": {
+    "base": 536870912,
+    "matrix": 256,
+    "dist": 16640,
+    "visited": 16896,
+    "parent": 17152
+  },
+  "assembler": "rv32 1.1.0 (RV32IMC_Zicsr_Zifencei)",
+  "assembler_sha256": "5c21b1a4d44cc6a5f61191d73def2ad265dd064a646916f79d633e8de7d4531c",
+  "assembler_origin": 0,
+  "hardware_reset": 2147483648,
+  "boot_relocation": "PC bit31 selects DMEM=0 or 0x20000000; mtvec rebased; branches are PC-relative",
+  "release_url": "https://github.com/A-Eren/rv32_emulator/releases/tag/v1.1.0",
+  "release_zip_sha256": "1e3b27d7cae98994af05cf89a4e5cee13c97da9b95b3b92248c42538e4d5244f",
+  "symbols": {
+    "_start": 2147483648,
+    "p1_validate_weight": 2147483848,
+    "p1_weight_ok": 2147483860,
+    "p1_init": 2147483880,
+    "p1_algorithm_begin": 2147483932,
+    "p1_outer": 2147483932,
+    "p1_select": 2147483944,
+    "p1_select_next": 2147483980,
+    "p1_relax": 2147484028,
+    "p1_relax_next": 2147484092,
+    "p1_algorithm_end": 2147484112,
+    "p1_bad_input": 2147484120,
+    "p1_trap": 2147484132,
+    "p1_publish": 2147484152,
+    "p1_halt": 2147484172
+  },
+  "program_bytes": 528,
+  "sha256": {
+    "p1_dijkstra.s": "30123e5d80037b80c1b0d84700cf5000c4f42ffcbf77c1ae97cb1fcda5d66148",
+    "graph_n7.json": "d1ba2a2db9f8c6cc088003acaf9c428a1ba91378d863ecb98e29d63e8ac75657",
+    "p1_imem.hex": "22d25512e859dd827f8c2ab434a91311413a50e8cb5c168db52e09775cf118a6",
+    "p1_dmem_n7.hex": "3638ba0a378f00dd00aad04c5fae9cb315bc121a40d9dece092e62b82f5fa1cc"
+  },
+  "verification": {
+    "xsim": {
+      "result": "PASS",
+      "two_reset_passes": true,
+      "finish_ns": 465400,
+      "actual_dist": [
+        0,
+        7,
+        9,
+        20,
+        20,
+        11,
+        2147483647
+      ],
+      "actual_parent": [
+        4294967295,
+        0,
+        0,
+        2,
+        5,
+        2,
+        4294967295
+      ],
+      "rtl_observation": {
+        "S0_DMEM_BASE": 536870912,
+        "SP": 536936432,
+        "MTVEC": 2147484132,
+        "TRACE_EVENTS_CHECKED_LAST_PASS": 1313,
+        "DONE": 1146048069,
+        "STATUS": 0,
+        "EXECUTED_ID": 1145653809
+      },
+      "evidence_directory": "outputs/p1_xsim_evidence",
+      "performance": "not measured; timeout ticks are not algorithm-only cycles"
+    },
+    "synthesis": "NOT RUN",
+    "official_emulator": {
+      "result": "FUNCTIONAL PASS",
+      "actual": {
+        "dist": [
+          0,
+          7,
+          9,
+          20,
+          20,
+          11,
+          2147483647
+        ],
+        "parent": [
+          4294967295,
+          0,
+          0,
+          2,
+          5,
+          2,
+          4294967295
+        ],
+        "visited": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "done": 1146048069,
+        "status": 0
+      },
+      "same_imem_and_dmem_words_verified": true,
+      "address_map": "emulator origin 0; firmware selects DMEM 0",
+      "performance": "not cycle accurate; no FPGA metrics measured"
+    }
+  }
+}
