@@ -1,4 +1,4 @@
-# EHB326E HW2 — Dijkstra on microBee
+# EHB326E HW2 — Dijkstra on microBee Arda Yüce - 040230045
 
 Arty A7-100 (`xc7a100tcsg324-1`), Vivado/XSim 2025.2. Fixed n32 benchmark; no MCDM or final profile selection.
 
